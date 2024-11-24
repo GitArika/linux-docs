@@ -7,7 +7,10 @@ www.ubuntu.com/server/download
 
 After install run 
 
-> sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y 
+```sh
+sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y 
+```
 
-
-> sudo apt autoremove
+```sh
+sudo apt autoremove
+```

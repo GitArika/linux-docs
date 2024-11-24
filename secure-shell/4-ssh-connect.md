@@ -1,5 +1,7 @@
 run
 
-> ssh username@ip-address
+```sh
+ssh username@ip-address
+```
 
 Then, login using your password.

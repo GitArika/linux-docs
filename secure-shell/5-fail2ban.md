@@ -1,6 +1,15 @@
-sudo apt install fail2ban
+# Install fail2ban
 
-> sudo vim /etc/fail2ban/jail.local
+```sh
+sudo apt install fail2ban
+```
+
+# Edit the jail file
+```sh
+sudo vim /etc/fail2ban/jail.local
+```
+
+# Insert the following content at the file
 
 ```
 [DEFAULT]
@@ -14,6 +23,10 @@ banaction = iptables-multiport
 enabled = true
 ```
 
-> sudo service fail2ban start
+```sh
+sudo service fail2ban start
+```
 
-> sudo fail2ban-client status sshd
+```sh
+sudo fail2ban-client status sshd
+```

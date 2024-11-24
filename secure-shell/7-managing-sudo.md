@@ -2,10 +2,11 @@
 
 In this example, we are giving for ariel the nginx permissions into our server
 
+```sh
+sudo visudo -f /etc/sudoers.d/my-sudoers
+```
 
-> sudo visudo -f /etc/sudoers.d/my-sudoers
-
-The following conf give ariel the nginx privileges
+## The following conf give ariel the nginx privileges
 
 ```
 ariel ALL=/etc/init.d/nginx status, /etc/init.d/nginx realod, /etc/init.d/nginx restart, /etc/init.d/nginx start, /etc/init.d/nginx stop 

@@ -1,9 +1,11 @@
 run
-> sudo apt install openssh-server
+```sh
+sudo apt install openssh-server
 
-> man sshd_config
+man sshd_config
 
-> sudo shutdown -h now
+sudo shutdown -h now
+````
 
 Go to virtual machine config -> network  adapter -> set as network bridge
 
@@ -11,6 +13,8 @@ Boot your machine again
 
 run
 
-> ip addr | grep inet
+```sh
+ip addr | grep inet
+```
 
 Grab your ip

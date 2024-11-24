@@ -2,6 +2,11 @@
 
 Just for example let's write a sh program sleep4.sh
 
+```sh
+vim sleep4.sh
+```
+
+## Past the following content in the file
 ```
 #!/bin/bash
 echo "I'm sleeping for 4 seconds..."
@@ -9,31 +14,44 @@ sleep 4
 echo "I'm awake now!"
 ```
 
-Give it running privileges
+## Give it running privileges
 
-> chmod +x sleep4.sh
+```sh
+chmod +x sleep4.sh
+```
 
 Then let's run it using bash
 
-> bash sleep4.sh
+```sh
+bash sleep4.sh
+```
 
 Then let's run it using nohup and bash
 
-> nohup bash sleep4.sh
+```sh
+nohup bash sleep4.sh
+```
 
 That will create a nohup.out file in our directory
 
-> cat nohup.out
+```sh
+cat nohup.out
+```
 
 ```
+# Output
 I'm sleeping for 4 seconds...
 I'm awake now!
 ```
 
 You can also redirect nohup output to a custom file 
 
-> nohup bash sleep4.sh > myoutput.txt
+```sh
+nohup bash sleep4.sh > myoutput.txt
+```
 
 Nohup also allows you to run programs in background using & 
 
-> nohup bash sleep4.sh >> myoutput.txt &
+```sh
+nohup bash sleep4.sh >> myoutput.txt &
+```
